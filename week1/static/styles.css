@@ -5,11 +5,21 @@ body {
 
 .banner{
     margin-top: 2rem;
-    color: blueviolet;
+    color: rgba(143, 13, 13, 0.781);
     margin-bottom: 1rem;
 }
 
 footer{
     margin-top: 5rem;
     text-align: center;
+}
+.mainheading{
+    margin-top: 2rem;
+    font-family: 'product-sans', product-sans, arial;
+    
+}
+
+imagescale {
+    width: 100px;
+    height: 50px;
 }

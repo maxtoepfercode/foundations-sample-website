@@ -17,6 +17,13 @@ def first_page():
 def second_page():
     return render_template('second-page.html', page_title="Second Template")
 
+
+@app.route('/third-page')
+def third_page():
+    return render_template('third-page.html', page_title="Third Template")
+
+
+
 # add additonal pages here using a similar format as above
 
 
