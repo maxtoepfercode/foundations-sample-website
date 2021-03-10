@@ -1,6 +1,4 @@
-from flask import Flask
-from flask import render_template
-from flask import request
+from flask import Flask, render_template, request, redirect
 from color_check.controllers.get_color_code import get_color_code
 app = Flask(__name__)
 
@@ -27,8 +25,12 @@ def show_color():
     
     return render_template('color.html', page_title="Show Color",
                            color_hex_code=color_hex_code)
-#    return render_template('wrongColor.html', page_title="Show Color")
+#    return redirect('/wrongColor')
 
+#@appxxx
+
+#def wrong()
+#return render_template()
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8080, debug=True)

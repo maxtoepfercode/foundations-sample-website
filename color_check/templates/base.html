@@ -8,6 +8,11 @@
   	<meta charset="utf-8"/>
     <!-- include the css from the file static/style.css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style> 
+      #color-container {
+        color: {{color_hex_code}};
+     } 
+    </style>
   </head>
   <body>
 

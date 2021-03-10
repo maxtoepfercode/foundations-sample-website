@@ -14,9 +14,10 @@ def get_color_code(color_name):
     # Open the file at data/css-color-names.json, and return the hex code
     # The file can be considered as JSON format, or as a Python dictionary.
     
-    jsonContent = []
-    with open('color_check/data/css-color-names.json', 'r') as fs:
-        jsonContent = json.load(fs)
+    fs = open('color_check/data/css-color-names.json')
+    jsonContent = json.load(fs)
+
+    
 
     hex_code = jsonContent[color_name]
 
