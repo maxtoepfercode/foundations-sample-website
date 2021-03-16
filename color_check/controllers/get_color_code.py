@@ -18,7 +18,12 @@ def get_color_code(color_name):
     jsonContent = json.load(fs)
 
     
+    try:
+        hex_code = jsonContent[color_name]
+    except KeyError:
+        return None
 
-    hex_code = jsonContent[color_name]
+
+   
 
     return hex_code
